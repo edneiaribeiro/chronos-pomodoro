@@ -1,5 +1,4 @@
-import { useEffect, useReducer, useState } from 'react';
-import type { TaskStateModel } from '../../models/TaskStateModel';
+import { useEffect, useReducer } from 'react';
 import { initialTaskState } from './initialTaskState';
 import { TaskContext } from './TaskContex';
 import { taskReducer } from './taskReducer';
