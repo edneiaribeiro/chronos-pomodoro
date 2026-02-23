@@ -1,15 +1,13 @@
-export function App() {
-  console.log('Oi Néia!');
+import { Home } from './pages/Home';
 
+import './styles/theme.css';
+import './styles/global.css';
+import { TaskContextProvider } from './contexts/TaskContext/TaskContextProvider';
+
+export function App() {
   return (
-    <>
-      <h1>Olá Néia!</h1>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor eos iste
-        recusandae odit illo voluptates, atque obcaecati sit excepturi
-        necessitatibus debitis laudantium fugiat totam porro cumque, nam, in
-        fuga ut!
-      </p>
-    </>
+    <TaskContextProvider>
+      <Home />
+    </TaskContextProvider>
   );
 }
