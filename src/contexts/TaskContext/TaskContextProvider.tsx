@@ -31,11 +31,7 @@ export function TaskContextProvider({ children }: TaskContextProviderProps) {
   });
 
   useEffect(() => {
-    console.log('Enviando estado para o worker:', state);
     if (!state.activeTask) {
-      console.log(
-        'Interrompendo o worker porque não há tarefa ativa, activeTask',
-      );
       worker.terminate();
     }
 
